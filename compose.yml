@@ -1,0 +1,9 @@
+services:
+  react-app:
+    build: .
+    volumes:
+      - ./:/app
+    command: npm start
+    tty: true
+    ports:
+      - "3000:3000"
